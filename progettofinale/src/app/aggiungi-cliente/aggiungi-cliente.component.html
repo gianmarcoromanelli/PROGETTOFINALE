@@ -1,0 +1,123 @@
+
+
+<h2 class="m-auto">Aggiungi Cliente</h2>
+<form class="my-3 bg-white">
+    <div class="form-group">
+        <label>Ragione Sociale</label>
+        <input type="text" [(ngModel)]="clienti.ragioneSociale" name="ragioneSociale" class="form-control"
+            placeholder="name">
+    </div>
+    <div class="form-group">
+        <label>Partita Iva</label>
+        <input type="text" [(ngModel)]="clienti.partitaIva" name="partitaIva" class="form-control"
+            placeholder="lastname">
+    </div>
+    <div class="form-group">
+        <label>Tipo cliente</label>
+        <select [(ngModel)]="clienti.tipoCliente" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let item of tipiCliente" [ngValue]="item">
+                {{item}}
+            </option>
+            
+        </select>
+    </div>
+<div class="form-group">
+        <label>Email</label>
+        <input type="text" [(ngModel)]="clienti.email" name="email" class="form-control" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label>Pec</label>
+        <input type="text" [(ngModel)]="clienti.pec" name="pec" class="form-control" placeholder="Pec">
+    </div>
+    <div class="form-group">
+        <label>Telefono</label>
+        <input type="text" [(ngModel)]="clienti.telefono" name="telefono" class="form-control" placeholder="Telefono">
+    </div>
+    <div class="form-group">
+        <label>Nome Contatto</label>
+        <input type="text" [(ngModel)]="clienti.nomeContatto" name="nomeContatto" class="form-control"
+            placeholder="nome contatto">
+    </div>
+<div class="form-group">
+        <label>Cognome Contatto</label>
+        <input type="text" [(ngModel)]="clienti.cognomeContatto" name="cognomeContatto" class="form-control"
+            placeholder="Cognome Contatto">
+    </div>
+    <div class="form-group">
+        <label>Telefono Contatto</label>
+        <input type="text" [(ngModel)]="clienti.telefono" name="telefonoContatto" class="form-control"
+            placeholder="Telefono Contatto">
+    </div>
+    <div class="form-group">
+        <label>email Contatto</label>
+        <input type="text" [(ngModel)]="clienti.email" name="emailContatto" class="form-control"
+            placeholder="email">
+    </div>
+    <h4><b>Indirizzo sede operativa</b></h4>
+    <b>Comune:</b>
+
+    <div class="form-group">
+
+        <div class="form-row">
+            <div class="col">
+                <label>Via</label>
+                <input type="text" class="form-control" placeholder="Via">
+            </div>
+            <div class="col">
+                <label>Civico</label>
+                <input type="text" class="form-control" placeholder="Civico">
+            </div>
+            <div class="col">
+                <label>Cap</label>
+                <input type="text" class="form-control" placeholder="Cap">
+            </div>
+            <div class="col">
+                <label>Località</label>
+                <input type="text" class="form-control" placeholder="Località">
+            </div>
+        </div>
+</div>
+    <h4><b>Indirizzo sede legale</b></h4>
+    <b>Comune:</b>
+    
+    <div class="form-group">
+
+        <div class="form-row">
+            <div class="col">
+                <label>Via</label>
+                <input type="text" class="form-control" placeholder="Via">
+            </div>
+            <div class="col">
+                <label>Civico</label>
+                <input type="text" class="form-control" placeholder="Civico">
+            </div>
+            <div class="col">
+                <label>Cap</label>
+                <input type="text" class="form-control" placeholder="Cap">
+            </div>
+            <div class="col">
+                <label>Località</label>
+                <input type="text" class="form-control" placeholder="Località">
+            </div>
+        </div>
+</div>
+    <div class="form-group">
+        <label for="website">Data Inserimento</label>
+        <input type="text" class="form-control" id="website">
+    </div>
+    <div class="form-group">
+        <label for="website">Data Ultimo Contatto</label>
+        <input type="text" class="form-control" id="website">
+    </div>
+    <div class="form-group">
+        <label for="website">Fatturato Annuale</label>
+        <input type="text" class="form-control" id="website">
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-dark form-control" (click)="aggiungi()" >Add</button>
+    </div>
+   
+</form>
+
+

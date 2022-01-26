@@ -1,0 +1,33 @@
+<h3 class="text-center mb-5">GESTIONE CLIENTI</h3>
+<table class="table table-bordered">
+    <thead>
+      <tr class="bg-dark text-warning">
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Telefono</th>
+        <th scope="col"></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of clienti,index as i">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nomeContatto}}</td>
+        <td>{{item.cognomeContatto}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.telefono}}</td>
+        <td >
+            <button type="button" class="btn btn-danger btn-sm mx-2 " (click)="elimina(item)"  ><i class="bi bi-file-x"></i></button>
+            <button type="button" class="btn btn-warning btn-sm mx-2"(click)="dettaglio(item)" ><i class="bi bi-zoom-in"></i></button>
+            <button type="button" class="btn btn-primary btn-sm mx-2 "(click)="modifica(item)" ><i class="bi bi-pen"></i></button>
+        </td>
+      </tr>
+    </tbody>
+    
+
+  </table>
+
+  
+  
