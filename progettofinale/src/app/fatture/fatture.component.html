@@ -1,0 +1,28 @@
+<h3 class="text-center mb-5">FATTURE</h3>
+<table class="table table-bordered">
+    <thead>
+      <tr class="bg-dark text-warning">
+        
+        <th scope="col">Data </th>
+        <th scope="col">Anno</th>
+        <th scope="col">Importo</th>
+        <th scope="col">Stato</th>
+        <th scope="col"></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of fatture ,index as i">
+        
+        <td>{{item.data}}</td>
+        <td>{{item.anno}}</td>
+        <td>{{item.importo}}</td>
+        <td>{{item.stato.nome}}</td>
+        <td> <button type="button" class="btn btn-warning btn-sm mx-2"(click)="dettaglio(item)" ><i class="bi bi-zoom-in"></i></button>
+             <button type="button" class="btn btn-primary btn-sm mx-2 "(click)="modifica(item)" ><i class="bi bi-pen"></i></button> 
+             <button type="button" class="btn btn-danger btn-sm mx-2 " (click)="elimina(item)"  ><i class="bi bi-file-x"></i></button></td>
+      </tr>
+    </tbody>
+    
+
+  </table>

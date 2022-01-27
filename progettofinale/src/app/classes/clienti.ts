@@ -14,6 +14,10 @@ export class Clienti {
     indirizzoSedeOperativa!:IndirizzoSedeOperativa;
     indirizzoSedeLegale!:IndirizzoSedeLegale;
     pec!:string;
+    dataInserimento!:string;
+    dataUltimoContatto!:string;
+    fatturatoAnnuale!:string;
+    emailContatto!:string;
 
     constructor(){
 

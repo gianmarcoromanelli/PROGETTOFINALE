@@ -13,6 +13,10 @@ import { ClientiDettaglioComponent } from './clienti-dettaglio/clienti-dettaglio
 import { InputClienteComponent } from './input-cliente/input-cliente.component';
 import { FormsModule } from '@angular/forms';
 import { AggiungiClienteComponent } from './aggiungi-cliente/aggiungi-cliente.component';
+import { FattureComponent } from './fatture/fatture.component';
+import { FattureDettaglioComponent } from './fatture-dettaglio/fatture-dettaglio.component';
+import { AggiungiFatturaComponent } from './aggiungi-fattura/aggiungi-fattura.component';
+import { ModificaFatturaComponent } from './modifica-fattura/modifica-fattura.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { AggiungiClienteComponent } from './aggiungi-cliente/aggiungi-cliente.co
     HomeComponent,
     ClientiDettaglioComponent,
     InputClienteComponent,
-    AggiungiClienteComponent
+    AggiungiClienteComponent,
+    FattureComponent,
+    FattureDettaglioComponent,
+    AggiungiFatturaComponent,
+    ModificaFatturaComponent
   ],
   imports: [
     BrowserModule,

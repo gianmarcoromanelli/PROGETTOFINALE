@@ -1,5 +1,5 @@
 import { Comune } from "./comune";
-import { Province } from "./province";
+
 
 export class IndirizzoSedeLegale {
 
@@ -7,7 +7,11 @@ export class IndirizzoSedeLegale {
     via!:string;
     civico!:string;
     cap!:string;
-    località!:string;
+    localita!:string;
     comune!:Comune;
-    provincia!:Province;
+    
+    constructor(){
+
+        this.comune=new Comune();
+    }
 }

@@ -13,14 +13,14 @@
     </thead>
     <tbody>
       <tr *ngFor="let item of clienti,index as i">
-        <th scope="row">{{item.id}}</th>
+        <td>{{item.id}}</td>
         <td>{{item.nomeContatto}}</td>
         <td>{{item.cognomeContatto}}</td>
         <td>{{item.email}}</td>
         <td>{{item.telefono}}</td>
         <td >
-            <button type="button" class="btn btn-danger btn-sm mx-2 " (click)="elimina(item)"  ><i class="bi bi-file-x"></i></button>
-            <button type="button" class="btn btn-warning btn-sm mx-2"(click)="dettaglio(item)" ><i class="bi bi-zoom-in"></i></button>
+            <button type="button" class="btn btn-danger btn-sm  mx-2" (click)="elimina(item)"  ><i class="bi bi-file-x"></i></button>
+            <button type="button" class="btn btn-warning btn-sm  mx-2  "(click)="dettaglio(item)" ><i class="bi bi-zoom-in"></i></button>
             <button type="button" class="btn btn-primary btn-sm mx-2 "(click)="modifica(item)" ><i class="bi bi-pen"></i></button>
         </td>
       </tr>

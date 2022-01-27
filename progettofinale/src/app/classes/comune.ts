@@ -5,10 +5,10 @@ export class Comune {
     id!:string;
     nome!:string;
     sigla!:string;
-    Provincia!:Province;
+    provincia!:Province;
 
     constructor(){
 
-        this.Provincia=new Province();
+        this.provincia=new Province();
     }
 }

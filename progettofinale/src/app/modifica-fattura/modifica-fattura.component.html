@@ -1,0 +1,24 @@
+
+
+<h3 class="m-auto text-center">MODIFICA FATTURA</h3>
+<form class="my-3 bg-white">
+    <div class="form-group">
+        <label>Numero</label>
+        <input type="text" [(ngModel)]="fatture.data" name="dataInserimento" class="form-control"
+            placeholder="Numero">
+            <label>Anno</label>
+            <input type="text" [(ngModel)]="fatture.anno" name="Anno" class="form-control"
+            placeholder="Anno">
+            <label>Importo</label>
+            <input type="text" [(ngModel)]="fatture.importo" name="Anno" class="form-control"
+            placeholder="Importo">
+    </div>
+    
+   
+    
+    <div class="form-group">
+        <button type="button" class="btn btn-dark form-control" (click)="modificaFattura()" >Modifica</button>
+    </div>
+   
+</form>
+

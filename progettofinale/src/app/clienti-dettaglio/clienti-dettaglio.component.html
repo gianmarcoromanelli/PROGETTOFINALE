@@ -1,20 +1,57 @@
+
+
+
 <div class="card text-white bg-dark mb-3 mt-5">
     <div class="card-header">
-         <h4 class=" text-warning">Dettaglio Cliente:</h4>
-        <h1>{{clienti.nomeContatto}} {{clienti.cognomeContatto}}</h1>
+         <h4 class=" text-warning text-center">Dettaglio Cliente:</h4>
+        <h1>{{clienti.nomeContatto}} 
+          {{clienti.cognomeContatto}}</h1>
     </div>
     <div class="card-body">
       
-      <h5 class="card-title"> Nome: {{clienti.nomeContatto}} </h5>
-      <h5 class="card-title"> Cognome:{{clienti.cognomeContatto}}</h5>
-      <h5 class="card-title"> Ragione sociale:{{clienti.ragioneSociale}}</h5>
-      <h5 class="card-title"> PartitaIva:{{clienti.partitaIva}}</h5>
-      <h5 class="card-title">Tipo Cliente:{{clienti.tipoCliente}}</h5>
-      <h5 class="card-title">Pec:{{clienti.pec}}</h5>
-      <h5 class="card-title"></h5>
-      <h5 class="card-title"></h5>
-      <h5 class="card-title"></h5>
+    
+        <h5 class="card-title text-warning">Partita IVA: <span class="text-white" >{{clienti.partitaIva}}</span> </h5>
+        <h5 class="card-text text-warning ">Id: <span class="text-white">{{clienti.id}}</span> </h5>
+        <h5 class="card-text text-warning">RagioneSociale:<span class="text-white"> {{clienti.ragioneSociale}}</span></h5>
+        <h5 class="card-text text-warning">TipoCliente:<span class="text-white">{{clienti.tipoCliente}}</span></h5>
+        <h5 class="card-text  text-warning">Email:<span class="text-white"> {{clienti.email}}</span></h5>
+        <h5 class="card-text text-warning">Pec: <span class="text-white">{{clienti.pec}}</span></h5>
+        <h5 class="card-text text-warning">Telefono: <span class="text-white"> {{clienti.telefono}}</span></h5>
+        <h5 class="card-text text-warning">Email Contatto: <span class="text-white">{{clienti.emailContatto}}</span></h5>
+        <h5 class="card-text text-warning">Indirizzo Sede Operativa:</h5>
+        <ul>
+            <li>via: {{clienti.indirizzoSedeOperativa.via}}</li>
+            <li>Civico: {{clienti.indirizzoSedeOperativa.civico}}</li>
+            <li>Cap: {{clienti.indirizzoSedeOperativa.cap}}</li>
+            <li>Località: {{clienti.indirizzoSedeOperativa.localita}}</li>
+            <ul>
+                <b class="text-warning">Comune</b>
+                <li>Nome: {{clienti.indirizzoSedeOperativa.comune.nome}}</li>
+                <li>Provincia:{{clienti.indirizzoSedeOperativa.comune.provincia.nome}}</li>
+            </ul>
+        </ul>
+        <h5 class="card-text text-warning">Indirizzo Sede Legale:</h5>
+        <ul>
+<li>Via: {{clienti.indirizzoSedeLegale.via}}</li>
+            <li>Civico:{{clienti.indirizzoSedeLegale.civico}}</li>
+            <li>Cap: {{clienti.indirizzoSedeLegale.cap}}</li>
+            <li>Località: {{clienti.indirizzoSedeLegale.localita}}</li>
+            <ul>
+                <b class="text-warning">Comune</b>
+                <li>Nome:{{clienti.indirizzoSedeLegale.comune.nome}}</li>
+                <li>Provincia:{{clienti.indirizzoSedeOperativa.comune.provincia.nome}}</li>
+            </ul>
+        </ul>
+        <p class="card-text text-warning">Data Inserimento: <span class="text-white">{{clienti.dataInserimento}}</span></p>
+        <p class="card-text text-warning">Data Ultimo Contatto:<span class="text-white">{{clienti.dataUltimoContatto}}</span></p>
+        <p class="card-text text-warning">Fatturato Annuale:<span class="text-white">{{clienti.fatturatoAnnuale}}</span></p>
+        
+        <a class="nav-link" href="#">Clienti</a>
+    </div>
       
       
     </div>
-  </div>
+ 
+
+
+ 

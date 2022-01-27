@@ -1,6 +1,6 @@
 
 
-<h2 class="m-auto">Aggiungi Cliente</h2>
+<h3 class="m-auto text-center">AGGIUNGI CLIENTE</h3>
 <form class="my-3 bg-white">
     <div class="form-group">
         <label>Ragione Sociale</label>
@@ -61,19 +61,19 @@
         <div class="form-row">
             <div class="col">
                 <label>Via</label>
-                <input type="text" class="form-control" placeholder="Via">
+                <input type="text" class="form-control" placeholder="Via" [(ngModel)]="clienti.indirizzoSedeOperativa.via" name="via">
             </div>
             <div class="col">
                 <label>Civico</label>
-                <input type="text" class="form-control" placeholder="Civico">
+                <input type="text" class="form-control" placeholder="Civico" [(ngModel)]="clienti.indirizzoSedeOperativa.civico" name="civico">
             </div>
             <div class="col">
                 <label>Cap</label>
-                <input type="text" class="form-control" placeholder="Cap">
+                <input type="text" class="form-control" placeholder="Cap" [(ngModel)]="clienti.indirizzoSedeOperativa.cap" name="cap">
             </div>
             <div class="col">
                 <label>Località</label>
-                <input type="text" class="form-control" placeholder="Località">
+                <input type="text" class="form-control" placeholder="Località" [(ngModel)]="clienti.indirizzoSedeOperativa.localita" name="localita">
             </div>
         </div>
 </div>
@@ -82,36 +82,36 @@
     
     <div class="form-group">
 
-        <div class="form-row">
+        <div class="form-row"> 
             <div class="col">
                 <label>Via</label>
-                <input type="text" class="form-control" placeholder="Via">
+                <input type="text" class="form-control" placeholder="Via" [(ngModel)]="clienti.indirizzoSedeLegale.via" name="via">
             </div>
             <div class="col">
                 <label>Civico</label>
-                <input type="text" class="form-control" placeholder="Civico">
+                <input type="text" class="form-control" placeholder="Civico" [(ngModel)]="clienti.indirizzoSedeLegale.civico" name="civico">
             </div>
             <div class="col">
                 <label>Cap</label>
-                <input type="text" class="form-control" placeholder="Cap">
+                <input type="text" class="form-control" placeholder="Cap" [(ngModel)]="clienti.indirizzoSedeLegale.cap" name="cap">
             </div>
             <div class="col">
                 <label>Località</label>
-                <input type="text" class="form-control" placeholder="Località">
+                <input type="text" class="form-control" placeholder="Località"[(ngModel)]="clienti.indirizzoSedeLegale.localita" name="localita">
             </div>
         </div>
 </div>
     <div class="form-group">
         <label for="website">Data Inserimento</label>
-        <input type="text" class="form-control" id="website">
+        <input type="text" class="form-control" id="website" [(ngModel)]="clienti.dataInserimento" name="dataInserimento">
     </div>
     <div class="form-group">
         <label for="website">Data Ultimo Contatto</label>
-        <input type="text" class="form-control" id="website">
+        <input type="text" class="form-control" id="website" [(ngModel)]="clienti.dataUltimoContatto" name="dataUltimoContatto">
     </div>
     <div class="form-group">
         <label for="website">Fatturato Annuale</label>
-        <input type="text" class="form-control" id="website">
+        <input type="text" class="form-control" id="website" [(ngModel)]="clienti.fatturatoAnnuale" name="fatturatoAnnuale">
     </div>
 
     <div class="form-group">

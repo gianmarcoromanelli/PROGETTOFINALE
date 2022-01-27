@@ -12,6 +12,7 @@ import { ClientiService } from '../services/clienti.service';
 export class InputClienteComponent implements OnInit {
  
   clienti:Clienti=new Clienti();
+  tipiCliente:string[]=[];
 
   constructor(private route:ActivatedRoute, 
               private clientiService:ClientiService,
@@ -21,6 +22,7 @@ export class InputClienteComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.clientiService.tipoCliente().subscribe(data=>this.tipiCliente=data)
     this.route.params.subscribe(params=>{
 
       this.clientiService.getClientiById(params['id']).subscribe(clienti=>{this.clienti=clienti})
