@@ -7,22 +7,22 @@
     <div class="card-body">
       
      
-        <h5 class="card-title text-warning">Data: <span class="text-white" >{{fatture.data}}</span> </h5>
-        <h5 class="card-text text-warning ">Anno: <span class="text-white">{{fatture.anno}}</span> </h5>
-        <h5 class="card-text text-warning">Importo:<span class="text-white"> {{fatture.importo}}</span></h5>
-        <h5 class="card-text text-warning">Stato:</h5>
+        <h6 class="card-title text-warning">Data: <span class="text-white" >{{fatture.data}}</span> </h6>
+        <h6 class="card-text text-warning ">Anno: <span class="text-white">{{fatture.anno}}</span> </h6>
+        <h6 class="card-text text-warning">Importo:<span class="text-white"> {{fatture.importo}}</span></h6>
+        <h6 class="card-text text-warning">Stato:</h6>
         
         <ul>
             <li class="text-danger" > <b>{{fatture.stato.nome}}</b> </li>
            
         </ul>
 
-         <h5 class="card-text text-warning">TipoCliente:<span class="text-white">{{fatture.cliente.tipoCliente}}</span></h5>
-        <h5 class="card-text  text-warning">Email:<span class="text-white"> {{fatture.cliente.email}}</span></h5>
-        <h5 class="card-text text-warning">Pec: <span class="text-white">{{fatture.cliente.pec}}</span></h5>
-        <h5 class="card-text text-warning">Telefono: <span class="text-white"> {{fatture.cliente.telefono}}</span></h5>
-        <h5 class="card-text text-warning">Email Contatto: <span class="text-white">{{fatture.cliente.emailContatto}}</span></h5>
-        <h5 class="card-text text-warning">Indirizzo Sede Operativa:</h5>
+         <h6 class="card-text text-warning">TipoCliente:<span class="text-white">{{fatture.cliente.tipoCliente}}</span></h6>
+        <h6 class="card-text  text-warning">Email:<span class="text-white"> {{fatture.cliente.email}}</span></h6>
+        <h6 class="card-text text-warning">Pec: <span class="text-white">{{fatture.cliente.pec}}</span></h6>
+        <h6 class="card-text text-warning">Telefono: <span class="text-white"> {{fatture.cliente.telefono}}</span></h6>
+        <h6 class="card-text text-warning">Email Contatto: <span class="text-white">{{fatture.cliente.emailContatto}}</span></h6>
+        <h6 class="card-text text-warning">Indirizzo Sede Operativa:</h6>
         <ul>
             <li>via: {{fatture.cliente.indirizzoSedeOperativa.via}}</li>
             <li>Civico: {{fatture.cliente.indirizzoSedeOperativa.civico}}</li>
@@ -34,7 +34,7 @@
                 <li>Provincia:{{fatture.cliente.indirizzoSedeOperativa.comune.provincia.nome}}</li>
             </ul>
         </ul>
-        <h5 class="card-text text-warning">Indirizzo Sede Legale:</h5>
+        <h6 class="card-text text-warning">Indirizzo Sede Legale:</h6>
         <ul>
 <li>Via: {{fatture.cliente.indirizzoSedeLegale.via}}</li>
             <li>Civico:{{fatture.cliente.indirizzoSedeLegale.civico}}</li>
