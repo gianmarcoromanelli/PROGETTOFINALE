@@ -39,8 +39,9 @@ getClientiById(id:number){
 
 rimuoviById(item:Clienti){
 
-  return this.http.delete<Clienti>(environment.clientiById+item.id,{headers:this.headers})
+  return this.http.delete(environment.clientiById+item.id,{headers:this.headers})
 }
+
 
 update(obj:Clienti) {
   

@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { Clienti } from '../classes/clienti';
 import { Fatture } from '../classes/fatture';
 
 @Injectable({
@@ -56,5 +57,7 @@ export class FattureService {
   rimuoviFattura(item:Fatture){
     return this.http.delete(environment.fattureById+ item.id,{headers: this.headers})
   }
+
+ 
   
 }
